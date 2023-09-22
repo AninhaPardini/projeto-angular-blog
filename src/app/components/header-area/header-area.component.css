@@ -21,12 +21,13 @@
   }
 }
 
-.header h1 svg {
-  width: 5rem;
+.header h1 > svg {
+  height: 5vw;
+  width: 5vw;
 
   @media (max-width: 768px) {
-    width: 2.4rem;
-
+    width: 2rem;
+    height: 2rem;
   }
 }
 

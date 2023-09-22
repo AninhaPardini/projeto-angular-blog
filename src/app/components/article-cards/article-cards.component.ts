@@ -1,17 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-article-cards',
   templateUrl: './article-cards.component.html',
   styleUrls: ['./article-cards.component.css']
 })
-export class ArticleCardsComponent {
-  title:string = 'Article Cards';
-  description:string = 'This is the article cards component.';
-  date:string = '2021-01-01 16:00:00';
-  readMinutes:number = 1;
+export class ArticleCardsComponent implements OnInit{
+
+  @Input()
+  now:Date = new Date();
+  @Input()
+  title = '';
+  @Input()
+  description  = '';
+  @Input()
+  date:any = new Date();
+  @Input()
+  readMinutes = '';
+  @Input()
+  banner = '';
+
 
   constructor() {
 
   }
+
+
+  ngOnInit(): void {
+  }
 }
+
+

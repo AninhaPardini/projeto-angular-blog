@@ -1,16 +1,24 @@
+:host { /* aplicando style direto no componente */
+  width: 100%;
+}
+
 .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  justify-content: space-between;
+  align-content: center;
 
   margin: .5rem 1rem .5rem 2rem;
   padding: 1rem;
   border-radius: 20px;
 
+
   background-color: var(--background-card);
 
   @media (max-width: 768px) {
     background: linear-gradient(90deg, rgba(42, 32, 53, 1) 66%, rgba(42, 32, 53, 0) 98%);
+    display: flex;
   }
 }
 
@@ -49,4 +57,31 @@
   font-size: .980rem;
   font-weight: lighter;
   color: var(--text-color-secondary);
+}
+
+.article__image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+
+  background-color: var(--background-image);
+
+
+
+  @media (max-width: 768px) {
+      position: relative;
+
+    }
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 20px 13px 35px 0px rgba(0, 0, 0, 0.1);
 }

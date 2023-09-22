@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule, registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +10,9 @@ import { HeaderAreaComponent } from './components/header-area/header-area.compon
 import { ArticleCardsComponent } from './components/article-cards/article-cards.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ContentComponent } from './pages/content/content.component';
+
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -15,14 +20,16 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     NavBarComponent,
     HeaderAreaComponent,
     ArticleCardsComponent,
-    HomeComponent
+    HomeComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [ { provide: LOCALE_ID, useValue: 'en-US'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

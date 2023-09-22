@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --background-card: #2A2035;
+  --background-hover: #3a2b49;
+  --background-image: #362b42;
   --text-color: #D0D0D0;
   --text-color-secondary: #85748f;
   --text-color-hover: #FFFFFF;

@@ -1,14 +1,18 @@
 <div class="article">
-  <div class="article__header">
-    <div class="article__date-and-read-time">
-      <p class="article__date">Posted at</p>
-      ·
-      <p class="article__readMinutes">20min read</p>
-    </div>
-    <h2 class="article__title"><a href="#">Title</a></h2>
-  </div>
   <div class="article__content">
-    <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus laborum.
-    </p>
+    <div class="article__header">
+      <div class="article__date-and-read-time">
+        <p class="article__date">{{ date|date:'EEE, dd MMM - h:ss a' }}</p>
+        ·
+        <p class="article__readMinutes">{{ readMinutes }} read</p>
+      </div>
+      <h2 class="article__title"><a href="#">{{ title }}</a></h2>
+    </div>
+    <div class="article__content">
+      <p class="article__text">{{ description }}</p>
+    </div>
+  </div>
+  <div class="article__image">
+    <img [src]="banner" alt="banner" class="banner">
   </div>
 </div>
