@@ -98,4 +98,23 @@
   padding: 3rem;
 
   width: 100%;
+
+}
+
+.main__sidebar-title {
+  font-weight: 600;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+
+  color: var(--text-color);
+ /*  background: linear-gradient(90deg, rgba(42, 32, 53, 1) 31%, rgba(67, 34, 103, 0.34637605042016806) 87%); */
+
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+
+.sidebar__spotify {
+  width: 100%;
+
+  margin-bottom: 1rem;
 }
