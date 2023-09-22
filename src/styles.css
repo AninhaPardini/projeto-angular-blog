@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --background-card: #2A2035;
+  --text-color: #D0D0D0;
+  --text-color-secondary: #85748f;
+  --text-color-hover: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+
+}
+
+
+
+
