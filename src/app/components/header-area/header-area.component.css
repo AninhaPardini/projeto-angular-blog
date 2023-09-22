@@ -1,10 +1,14 @@
 .header {
-  padding: 4rem 2rem;
+  padding: 4rem 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 855px) {
+    padding: 4rem 7vw;
+  }
 }
 
 .header h1 {
@@ -13,7 +17,16 @@
   margin-bottom: .2rem;
 
   @media (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 5.5vw;
+  }
+}
+
+.header h1 svg {
+  width: 5rem;
+
+  @media (max-width: 768px) {
+    width: 2.4rem;
+
   }
 }
 
@@ -26,5 +39,6 @@
   color: var(--text-color-secondary);
   @media (min-width: 768px) {
     font-size: 1.5rem;
+
   }
 }
