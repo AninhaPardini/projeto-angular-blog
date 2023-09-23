@@ -18,6 +18,13 @@
     background: linear-gradient(90deg, rgba(42, 32, 53, 1) 66%, rgba(42, 32, 53, 0) 98%);
     display: flex;
   }
+
+  transition: all .1s ease-in-out;
+}
+
+.article:hover {
+  background-color: var(--background-hover);
+  transform: scale(1.01);
 }
 
 .article__header {

@@ -8,20 +8,43 @@
  /*  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2); */
 }
 
+.menu__burguer {
+  display: flex;
+
+  @media (min-width: 768px) {
+      display: none;
+    }
+}
+
 .burguer {
   width: 2.8rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
 
-  @media (min-width: 768px) {
-    display: none;
-  }
+
 }
 
 .burguer:hover svg {
   fill: var(--text-color-hover);
 }
+
+.menu__horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+      display: none;
+    }
+}
+
+.menu__horizontal div ul li {
+  display: none;
+}
+
 
 .social {
   width: 10rem;

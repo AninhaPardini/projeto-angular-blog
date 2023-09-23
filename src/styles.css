@@ -17,6 +17,7 @@
 }
 
 body {
+  background-color: #231C2B;
   background-image: url(./assets/background-image.png);
   background-repeat: no-repeat;
   background-size: cover;

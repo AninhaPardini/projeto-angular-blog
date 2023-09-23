@@ -1,0 +1,33 @@
+<div class="book">
+  <ul>
+    <img [src]="cover" alt="">
+    <div class="status-bar"></div>
+    <li>
+      <p>{{ status }}%</p>
+      <h3>{{ title }}</h3>
+
+    </li>
+    <li>
+      <div [ngSwitch]="note" class="stars">
+        <div *ngSwitchDefault>
+
+        </div>
+        <div *ngSwitchCase="'1'">
+
+        </div>
+        <div *ngSwitchCase="'2'">
+
+        </div>
+        <div *ngSwitchCase="'3'">
+
+        </div>
+        <div *ngSwitchCase="'4'">
+
+        </div>
+        <div *ngSwitchCase="'5'">
+
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

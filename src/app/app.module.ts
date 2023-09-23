@@ -11,6 +11,8 @@ import { ArticleCardsComponent } from './components/article-cards/article-cards.
 import { HomeComponent } from './pages/home/home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ContentComponent } from './pages/content/content.component';
+import { MyLibraryComponent } from './my-library/my-library.component';
+import { BookComponent } from './book/book.component';
 
 registerLocaleData(localePt);
 
@@ -21,7 +23,9 @@ registerLocaleData(localePt);
     HeaderAreaComponent,
     ArticleCardsComponent,
     HomeComponent,
-    ContentComponent
+    ContentComponent,
+    MyLibraryComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
