@@ -47,7 +47,7 @@
 
 .menu__horizontal .menu__navbar {
   display: flex;
-  gap: 5rem;
+  gap: 8rem;
 
   position: relative;
 
@@ -58,9 +58,13 @@
   color: var(--text-color);
 }
 
+.menu__horizontal .menu__navbar a:hover {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+}
+
 .menu__horizontal .menu__navbar li {
   text-decoration: none;
-  color: var(--text-color);
 
   list-style: none;
   cursor: pointer;
@@ -79,7 +83,7 @@
 }
 
 #item {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 #item:hover {
@@ -88,16 +92,30 @@
 }
 
 .item__subitem {
-  display: none;
-
   position: absolute;
+  top: 1.8rem;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  width: 6rem;
+  height: 5rem;
+
+  background-color: var(--background-card);
+  background: linear-gradient(180deg, transparent 0%, var(--background-card) 100%);
+
+
+  border-radius: 0.5rem;
 
   list-style: none;
   cursor: pointer;
 }
 
 .item__subitem li {
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .menu__horizontal div ul li {
