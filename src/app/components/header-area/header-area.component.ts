@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-area.component.css']
 })
 export class HeaderAreaComponent {
+  constructor() { }
 
+  moveToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
 }

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100vh;
 
   @media (max-width: 855px) {
     padding: 4rem 7vw;
@@ -16,17 +17,17 @@
   margin-bottom: .2rem;
 
   @media (min-width: 768px) {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 }
 
-.header h1 > svg {
+.header h1 > img {
   height: 5vw;
   width: 5vw;
 
   @media (max-width: 768px) {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 }
 
@@ -42,3 +43,26 @@
 
   }
 }
+
+.header__arrow {
+  position: absolute;
+  top: 90vh;
+
+}
+
+.header__arrow button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 4rem;
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
