@@ -12,7 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ContentComponent } from './pages/content/content.component';
 import { MyLibraryComponent } from './my-library/my-library.component';
-import { BookComponent } from './book/book.component';
+import { BookComponent } from './components/book/book.component';
 
 registerLocaleData(localePt);
 

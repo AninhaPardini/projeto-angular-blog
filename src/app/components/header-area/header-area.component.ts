@@ -9,6 +9,10 @@ export class HeaderAreaComponent {
   constructor() { }
 
   moveToBottom() {
-    window.scrollTo(0, document.body.scrollHeight);
+    const largura_tela = window.innerWidth;
+    const elemento:any = document.getElementById('main__area');
+
+    elemento.scrollIntoView();
   }
 }
+
