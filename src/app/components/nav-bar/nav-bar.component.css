@@ -135,3 +135,81 @@
   position: absolute;
   right: 1rem;
 }
+
+.menu__vertical {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+
+  width: 0;
+  height: 0;
+
+  background-color: rgba(0, 0, 0, 0.615);
+  backdrop-filter: blur(5px);
+  --webkit-backdrop-filter: blur(5px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 4;
+
+  transition: width 0.5s ease-in-out;
+}
+
+.active {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+  top: 0;
+  left: 2%;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  z-index: 5;
+
+}
+
+.material-symbols-outlined {
+
+  font-size: 3rem;
+  color: var(--text-color);
+
+}
+
+.menu__vertical a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.menu__vertical a:hover {
+  color: var(--text-color-secondary);
+}
+
+.menu__vertical li {
+  text-decoration: none;
+
+  list-style: none;
+  cursor: pointer;
+
+  font-size: 1.5rem;
+
+  transition: all 0.2s ease-in-out;
+}

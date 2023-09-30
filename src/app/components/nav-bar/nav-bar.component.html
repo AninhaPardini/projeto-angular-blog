@@ -27,13 +27,24 @@
     </ul>
   </div>
   <div class="menu__burguer">
-    <button class="burguer">
+    <button class="burguer" (click)="toggleMenu()" id="burguer">
       <svg width="55" height="56" viewBox="0 0 55 56" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6.875 39.4583C6.875 40.724 7.90101 41.75 9.16667 41.75H45.8333C47.099 41.75 48.125 40.724 48.125 39.4583V39.4583C48.125 38.1927 47.099 37.1667 45.8333 37.1667H9.16667C7.90102 37.1667 6.875 38.1927 6.875 39.4583V39.4583ZM6.875 28C6.875 29.2657 7.90101 30.2917 9.16667 30.2917H45.8333C47.099 30.2917 48.125 29.2657 48.125 28V28C48.125 26.7343 47.099 25.7083 45.8333 25.7083H9.16667C7.90102 25.7083 6.875 26.7343 6.875 28V28ZM9.16667 14.25C7.90102 14.25 6.875 15.276 6.875 16.5417V16.5417C6.875 17.8073 7.90101 18.8333 9.16667 18.8333H45.8333C47.099 18.8333 48.125 17.8073 48.125 16.5417V16.5417C48.125 15.276 47.099 14.25 45.8333 14.25H9.16667Z"
           fill="#DEDEDE" />
       </svg>
     </button>
+    <ul class="menu__vertical" id="sidebar">
+      <button class="close" (click)="toggleMenu()">
+        <span class="material-symbols-outlined">
+          close
+        </span>
+      </button>
+
+      <li><a href="#">Design</a></li>
+      <li><a href="#">Development</a></li>
+      <li><a href="#">Product Manager</a></li>
+    </ul>
   </div>
 
   <svg class="social" width="187" height="44" viewBox="0 0 187 44" fill="none" xmlns="http://www.w3.org/2000/svg">
