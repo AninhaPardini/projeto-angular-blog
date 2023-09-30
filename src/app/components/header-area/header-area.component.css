@@ -9,6 +9,7 @@
 
   @media (max-width: 855px) {
     padding: 4rem 7vw;
+    height: 80vh;
   }
 }
 
@@ -54,8 +55,8 @@
 }
 
 .header__arrow {
-  position: absolute;
-  top: 90vh;
+  position: relative;
+  top: 40%;
 
 }
 
