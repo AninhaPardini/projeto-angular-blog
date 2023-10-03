@@ -87,8 +87,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-
-
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 
 }
 
@@ -131,10 +132,10 @@ app-nav-bar {
 
 .header__arrow {
   position: relative;
-  top: 10%;
+  top: 20%;
 
   @media (max-width: 768px) {
-    top: 30%;
+    top: 20%;
 
   }
 }

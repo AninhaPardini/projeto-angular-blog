@@ -49,7 +49,8 @@
 
 .menu__horizontal .menu__navbar {
   display: flex;
-  gap: 3rem;
+  flex-wrap: wrap;
+  gap: 2vw;
 
   position: relative;
   @media (max-width: 768px) {
@@ -68,6 +69,9 @@
 }
 
 .menu__horizontal .menu__navbar li {
+  flex-grow: 1;
+  flex-basis: 400;
+
   text-decoration: none;
   text-align: center;
   list-style: none;
@@ -75,7 +79,7 @@
 
   font-size: 1.3dvw;
 
-  padding: .3dvw 1dvw;
+  padding: .6dvw 1dvw;
   border-radius: 2rem;
 
   background-color: #ffffff1a;
