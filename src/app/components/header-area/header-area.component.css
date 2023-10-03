@@ -1,5 +1,5 @@
 .header {
-  padding: 4rem 20vw;
+  padding: 0 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,23 +12,92 @@
   }
 }
 
+.header .header__border__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 16rem;
+  height: 16rem;
+
+  border-radius: 100%;
+
+  margin-bottom: 2rem;
+
+  background: -webkit-linear-gradient(360deg,
+      rgba(141, 9, 164, 1) 12%,
+      rgb(100, 23, 138) 45%);
+
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+.header .header__profile {
+
+  width: 15rem;
+
+  border-radius: 100%;
+
+  -webkit-box-shadow: 21px 31px 92px -32px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 21px 31px 92px -32px rgba(0, 0, 0, 0.62);
+  box-shadow: 21px 31px 92px -32px rgba(0, 0, 0, 0.62);
+
+  transition: all .2s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 10rem;
+
+  }
+
+
+}
+
+.header .header__profile:hover {
+  filter: brightness(1.1);
+
+  transform: scale(1.05);
+
+}
+
 .header h1 {
+  text-align: center;
   font-weight: 700;
   margin-bottom: .2rem;
+  font-size: 4vw;
 
-  @media (min-width: 768px) {
-    font-size: 5vw;
+  @media (max-width: 768px) {
+    font-size: 6vw;
   }
 
   transition: all .2s ease-in-out;
 }
 
-.header h1:hover {
-  transform: scale(1.05);
-  text-shadow: .1rem .1rem 2rem var(--text-color-secondary);
+.header h1 span {
+  font-weight: 700;
+  padding: .4rem;
+  background: -webkit-linear-gradient(360deg,
+    rgba(141, 9, 164, 1) 12%,
+      rgb(100, 23, 138) 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+
+
+
+}
+
+.header h1:hover {
+
+  filter: brightness(1.1);
   cursor: pointer;
 }
+
 
 .header h1 > img {
   height: 5vw;
@@ -42,21 +111,29 @@
 
 .header p {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
 
   color: var(--text-color-secondary);
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
+  @media (max-width: 768px) {
+    font-size: 1rem;
 
   }
 }
 
+app-nav-bar {
+  width: 100%;
+}
+
 .header__arrow {
   position: relative;
-  top: 40%;
+  top: 10%;
 
+  @media (max-width: 768px) {
+    top: 30%;
+
+  }
 }
 
 .header__arrow button {

@@ -4,8 +4,8 @@
   --background-hover: #3a2b49;
   --background-image: #362b42;
   --text-color: #D0D0D0;
-  --text-color-secondary: #85748f;
-  --text-color-hover: #FFFFFF;
+  --text-color-secondary: #8d749c;
+  --text-color-hover: rgba(141, 9, 164, 1);
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -15,11 +15,13 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-feature-settings: "lnum";
+  --webkit-user-drag: none;
 }
 
 body {
-  background-color: #231C2B;
-  background-image: url(./assets/background-image.png);
+  background-color: #000000;
+
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--text-color);

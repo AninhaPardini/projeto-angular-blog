@@ -14,5 +14,6 @@ export class HeaderAreaComponent {
 
     elemento.scrollIntoView();
   }
+
 }
 
