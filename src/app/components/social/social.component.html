@@ -1,0 +1,37 @@
+<div id="social">
+  <ul class="sc-gGCDDS dHqNmG d-none d-lg-block">
+    <li class="sc-faUpoM jhNVOh" *ngFor="let social of listSocial">
+      <a [href]="social.link" target="_blank">
+        <img src="/assets/images/social/{{ social.icon }}" [alt]="social.name" class="sc-clIzBv izPwcl" />
+      </a>
+    </li>
+  </ul>
+  <div class="sc-ehCJOs jlwvsg d-lg-none" [ngStyle]="{
+        'background-color': socialOpen ? 'rgba(13, 25, 31, .48)' : 'transparent'
+    }">
+    <ul class="sc-jeraig kNa-DBI">
+      <a (click)="toggleSocial()" class="sc-nVkyK jYstNK">
+        <div class="sc-hiwPVj" [ngClass]="{
+                    'bLxWnW': !socialOpen,
+                    'IqLMm': socialOpen
+                }">
+          <div class="sc-lcepkR dwcsGv">
+            {{ socialOpen ? 'x' : '+' }}
+          </div>
+        </div>
+      </a>
+      <div>
+        <li class="sc-eJwWfJ" [ngClass]="{
+                    'eCZhGZ': !socialOpen,
+                    'RNxzJ': socialOpen
+                }" [ngStyle]="{
+                    'transform': socialOpen ? 'translate(0, 0)' : 'translate(0, 50px)'
+                }" *ngFor="let social of listSocial">
+          <a [href]="social.link" target="_blank">
+            <img src="/assets/images/social/{{ social.icon }}" [alt]="social.name" class="w-100" />
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>

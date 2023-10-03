@@ -11,9 +11,11 @@ import { ArticleCardsComponent } from './components/article-cards/article-cards.
 import { HomeComponent } from './pages/home/home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ContentComponent } from './pages/content/content.component';
-import { MyLibraryComponent } from './my-library/my-library.component';
+import { MyLibraryComponent } from './components/my-library/my-library.component';
 import { BookComponent } from './components/book/book.component';
-import { LightonOffComponent } from './lighton-off/lighton-off.component';
+import { LightonOffComponent } from './components/lighton-off/lighton-off.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SocialComponent } from './components/social/social.component';
 
 registerLocaleData(localePt);
 
@@ -27,7 +29,9 @@ registerLocaleData(localePt);
     ContentComponent,
     MyLibraryComponent,
     BookComponent,
-    LightonOffComponent
+    LightonOffComponent,
+    NotFoundComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

@@ -87,6 +87,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+  filter: brightness(1.5);
+
   @media (max-width: 768px) {
     font-size: 1.8rem;
   }
@@ -95,7 +97,7 @@
 
 .header h1:hover {
 
-  filter: brightness(1.1);
+  filter: brightness(2);
   cursor: pointer;
 }
 

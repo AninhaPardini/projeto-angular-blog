@@ -1,0 +1,131 @@
+.dHqNmG {
+  position: fixed;
+  background: -webkit-linear-gradient(90deg, rgba(141, 9, 164, 0.099) 12%, rgba(100, 23, 138, 0.151) 45%);
+  padding: 8px 3px;
+  right: 5px;
+  border-radius: 30px;
+  z-index: 200;
+  bottom: 7%;
+}
+
+.jhNVOh {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.izPwcl {
+  width: 45px;
+  height: 45px;
+  padding: 3px;
+}
+
+.izPwcl:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+.jlwvsg {
+  z-index: 100;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px 3px;
+  border-radius: 30px;
+}
+
+.jlwvsg a {
+  text-decoration: none;
+}
+
+.kNa-DBI {
+  display: flex;
+  width: fit-content;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column-reverse;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.jYstNK {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 14%) 0px 0px 4px, rgb(0 0 0 / 28%) 0px 4px 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 0px;
+  -webkit-user-drag: none;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(31, 13, 29, 0.48);
+}
+
+.bLxWnW {
+  display: flex;
+  text-decoration: none;
+  transition: transform 300ms ease 0s;
+  transform: rotate(0deg);
+}
+
+.IqLMm {
+  display: flex;
+  text-decoration: none;
+  transition: transform 300ms ease 0s;
+  transform: rotate(180deg);
+}
+
+.dwcsGv {
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.eCZhGZ {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 14%) 0px 0px 4px, rgb(0 0 0 / 28%) 0px 4px 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 0px;
+  -webkit-user-drag: none;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 10px;
+  pointer-events: none;
+}
+
+.RNxzJ {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 14%) 0px 0px 4px, rgb(0 0 0 / 28%) 0px 4px 8px;
+  cursor: pointer;
+  outline: none;
+  padding: 0px;
+  -webkit-user-drag: none;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 10px;
+  pointer-events: auto;
+}
