@@ -10,7 +10,7 @@ export class HeaderAreaComponent {
 
   moveToBottom() {
     const largura_tela = window.innerWidth;
-    const elemento:any = document.getElementById('main');
+    const elemento:any = document.getElementById('main__area');
 
     elemento.scrollIntoView();
   }
