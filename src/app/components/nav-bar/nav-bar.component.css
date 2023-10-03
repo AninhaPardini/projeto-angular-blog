@@ -69,32 +69,34 @@
 
 .menu__horizontal .menu__navbar li {
   text-decoration: none;
-
+  text-align: center;
   list-style: none;
   cursor: pointer;
 
-  transition: all 0.2s ease-in-out;
-}
+  font-size: 1.3dvw;
 
-#item {
-  text-align: center;
-
-  padding: .9rem 1rem;
+  padding: .3dvw 1dvw;
   border-radius: 2rem;
 
   background-color: #ffffff1a;
   border: white .1rem solid;
 
-  font-size: 1.3rem;
-
   transition: all 0.2s ease-in-out;
 
-  @media (max-width: 768px) {
-    font-size: .8rem;
+  /* @media (min-width: 736px) and (max-width: 936px) {
+    font-size: 2vw;
+    padding: .6rem;
+  } */
+
+  @media (max-width: 736px) {
+    font-size: 1rem;
+    padding: .3rem .6rem;
   }
+
 }
 
-#item:hover {
+
+.menu__horizontal .menu__navbar li:hover {
   color: var(--text-color-hover);
   background-color: transparent;
   border: var(--text-color-hover) .1rem solid;

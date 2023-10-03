@@ -6,6 +6,7 @@
   --text-color: #D0D0D0;
   --text-color-secondary: #8d749c;
   --text-color-hover: rgba(141, 9, 164, 1);
+  --background-color: linear-gradient(120deg, rgba(39, 2, 45, 1) 12%, rgba(0, 0, 0, 1) 45%);
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -20,7 +21,7 @@
 }
 
 body {
-  background-color: #000000;
+  background: var(--background-color);
 
   background-repeat: no-repeat;
   background-size: cover;

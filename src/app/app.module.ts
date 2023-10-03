@@ -13,6 +13,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ContentComponent } from './pages/content/content.component';
 import { MyLibraryComponent } from './my-library/my-library.component';
 import { BookComponent } from './components/book/book.component';
+import { LightonOffComponent } from './lighton-off/lighton-off.component';
 
 registerLocaleData(localePt);
 
@@ -25,7 +26,8 @@ registerLocaleData(localePt);
     HomeComponent,
     ContentComponent,
     MyLibraryComponent,
-    BookComponent
+    BookComponent,
+    LightonOffComponent
   ],
   imports: [
     BrowserModule,
