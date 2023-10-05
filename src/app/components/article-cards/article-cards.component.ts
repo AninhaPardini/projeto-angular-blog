@@ -10,15 +10,17 @@ export class ArticleCardsComponent implements OnInit{
   @Input()
   now:Date = new Date();
   @Input()
-  title = '';
+  title:string = '';
   @Input()
-  description  = '';
+  description:string  = '';
   @Input()
   date:any = new Date();
   @Input()
-  readMinutes = '';
+  readMinutes:string = '';
   @Input()
-  banner = '';
+  banner:string = '';
+  @Input()
+  id:string = '0';
 
 
   constructor() {

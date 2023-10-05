@@ -68,10 +68,10 @@
   color: var(--text-color-hover);
 }
 
+
 .main__content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-wrap: wrap;
 
   gap: 2rem;
 
@@ -84,15 +84,21 @@
 
 .main__articles {
   display: flex;
-  flex-direction: column;
+  flex-grow: 1;
+
   align-items: flex-start;
   justify-content: flex-start;
 
-  width: 100%;
+  gap: 1rem;
+
 }
 
 .main__sidebar {
   display: flex;
+
+  flex-grow: 1;
+  flex-basis: 200;
+
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -100,8 +106,6 @@
   /* border-left: 1px solid #cccccc17; */
 
   padding: 0 2rem;
-
-  width: 100%;
 
 }
 
