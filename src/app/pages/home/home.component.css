@@ -28,6 +28,9 @@
 
   width: 100%;
 
+  @media (max-width: 768px) {
+    padding: 0 1rem 0 1rem;
+  }
 }
 
 .main__countAllPosts {
@@ -49,7 +52,6 @@
   align-items: center;
   justify-content: center;
 
-  margin: 0 1.5rem;
 }
 
 .main__repository-link {
@@ -61,7 +63,6 @@
   text-decoration: none;
   color: var(--text-color);
 
-  margin: 0 .5rem;
 }
 
 .main__repository-link:hover {
@@ -82,6 +83,12 @@
   }
 }
 
+app-article-cards {
+
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
+}
+
 .current-item {
   opacity: 1;
 }
@@ -89,12 +96,18 @@
 .main__container {
   position: relative;
   width: 100%;
-  padding-left: 1rem;
+  padding: 1rem 0 0 1rem;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 .container__articles__wrapper {
   overflow-x: auto;
   overflow: hidden;
+
+  margin: 0 1.5rem 0 1.5rem;
 }
 
 .main__articles {
