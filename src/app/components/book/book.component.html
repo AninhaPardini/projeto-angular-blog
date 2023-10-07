@@ -1,33 +1,41 @@
 <div class="book">
-  <ul>
-    <img [src]="cover" alt="">
+  <ul class="book__container">
+    <img class="book__cover" [src]="cover" alt="">
     <div class="status-bar"></div>
-    <li>
+    <li class="book__infos">
       <p>{{ status }}%</p>
-      <h3>{{ title }}</h3>
-
-    </li>
-    <li>
-      <div [ngSwitch]="note" class="stars">
-        <div *ngSwitchDefault>
-
-        </div>
-        <div *ngSwitchCase="'1'">
-
-        </div>
-        <div *ngSwitchCase="'2'">
-
-        </div>
-        <div *ngSwitchCase="'3'">
-
-        </div>
-        <div *ngSwitchCase="'4'">
-
-        </div>
-        <div *ngSwitchCase="'5'">
-
+      <div class="book__stars">
+        <div [ngSwitch]="note" class="stars">
+          <div class="stars" *ngSwitchDefault>
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+          </div>
+          <div class="stars" *ngSwitchCase="'2'">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+          </div>
+          <div class="stars" *ngSwitchCase="'3'">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+          </div>
+          <div class="stars" *ngSwitchCase="'4'">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+          </div>
+          <div class="stars" *ngSwitchCase="'5'">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+            <img src="../../../assets/images/book/star.svg" alt="Star">
+          </div>
         </div>
       </div>
+    </li>
+    <li class="book__title">
+      <h3>{{ title }}</h3>
     </li>
   </ul>
 </div>

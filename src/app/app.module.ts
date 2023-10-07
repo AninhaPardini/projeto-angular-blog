@@ -17,6 +17,8 @@ import { LightonOffComponent } from './components/lighton-off/lighton-off.compon
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SocialComponent } from './components/social/social.component';
 
+
+
 registerLocaleData(localePt);
 
 @NgModule({
@@ -37,7 +39,8 @@ registerLocaleData(localePt);
     BrowserModule,
     AppRoutingModule,
     MatSlideToggleModule,
-    CommonModule
+    CommonModule,
+
   ],
   providers: [ { provide: LOCALE_ID, useValue: 'en-US'}],
   bootstrap: [AppComponent]

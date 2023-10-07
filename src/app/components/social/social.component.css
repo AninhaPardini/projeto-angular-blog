@@ -129,3 +129,19 @@
   margin: 0px 0px 10px;
   pointer-events: auto;
 }
+
+.d-block {
+  display: block!important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 992px) { .d-lg-block {
+    display: block !important;
+  }
+  .d-lg-none {
+    display: none !important;
+  }
+}

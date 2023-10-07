@@ -89,8 +89,7 @@
 .main__container {
   position: relative;
   width: 100%;
-  max-width: 100vw;
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 .container__articles__wrapper {

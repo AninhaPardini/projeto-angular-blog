@@ -12,14 +12,12 @@ export class BookComponent {
   @Input()
   title: string = 'A revolução dos bixos';
   @Input()
-  note: number = 0;
+  note: string = '';
   @Input()
   status: number = 10;
 
   constructor() {
 
   }
-
-
 
 }

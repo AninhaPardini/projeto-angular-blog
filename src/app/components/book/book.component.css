@@ -1,35 +1,135 @@
 .book {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 6rem;
-    background-color: #f5f5f5;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  background-color: #f5f5f5;
+
+  @media (max-width: 768px) {
+
+  }
+}
+
+.book__container {
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+.book__cover {
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    width: 7rem;
+  }
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: .3rem;
+
+  background-color: #6e2c86;
+}
+
+.book__infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem 0 1rem;
+
+  gap: .5rem;
+
+  width: 100%;
+  height: 100%;
+}
+
+.book__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1rem;
+
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    padding: .8rem .8rem .5rem .8rem;
   }
 
-  .book ul {
-    text-decoration: none;
-    list-style: none;
-  }
+}
 
-  .book ul img {
-    width: 100%;
-    height: 100%;
-  }
+.book__title h3 {
+  font-size: 1rem;
+  font-weight: bold;
 
-  .book ul li {
-    display: none;
-  }
+  width: 100%;
 
-  .book h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 0;
-  }
+  color: #6e2c86;
 
-  .show {
-    display: flex;
+  @media (max-width: 768px) {
+    font-size: .8rem;
   }
+}
+
+.book__infos p {
+  font-size: .8rem;
+  width: 2.5rem;
+
+  color: #e7e7e7;
+  background-color: var(--background-hover);
+
+  padding: .5rem;
+
+  border-radius: 0 1rem 1rem 1rem;
+
+  @media (max-width: 768px) {
+    font-size: .5rem;
+
+    width: 2.2rem;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.book__stars {
+  position: relative;
+}
+
+.stars {
+
+  display: flex;
+  justify-content: center;
+
+  gap: .4rem;
+
+  @media (max-width: 768px) {
+    gap: .2rem;
+  }
+}
+
+.stars img {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  @media (max-width: 768px) {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+

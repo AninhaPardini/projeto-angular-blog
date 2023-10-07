@@ -23,11 +23,13 @@ export class SocialComponent implements OnInit {
 
     ];
 
-    toggleSocial() {
-        this.socialOpen = !this.socialOpen;
-    }
-
     ngOnInit(): void {
 
     }
+
+    toggleSocial() {
+      this.socialOpen = !this.socialOpen;
+    }
+
+
 }
