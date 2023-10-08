@@ -10,8 +10,8 @@
   flex-direction: column;
   justify-content: space-around;
 
-  width: 18rem;
-  height: 20rem;
+  width: 16rem;
+  height: 18rem;
 
   padding: 1.5rem;
   border-radius: 20px;
@@ -60,7 +60,7 @@
 
   margin-top: 1rem;
 
-  font-size: .890rem;
+  font-size: .680rem;
   color: var(--text-color-secondary);
 
 }
@@ -69,7 +69,7 @@
   text-decoration: none;
   color: var(--text-color);
 
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -81,7 +81,7 @@
 }
 
 .article__text {
-  font-size: .980rem;
+  font-size: .880rem;
   font-weight: lighter;
   color: var(--text-color-secondary);
 
@@ -96,7 +96,7 @@
   align-items: center;
 
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   border-radius: 20px;
 
   background-color: var(--background-image);

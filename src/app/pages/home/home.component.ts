@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+
     const controls: NodeListOf<Element> = document.querySelectorAll(".control");
     let currentItem: number = 0;
     const items: NodeListOf<Element> = document.querySelectorAll(".item");
@@ -37,8 +38,10 @@ export class HomeComponent implements OnInit {
         items.forEach((item: Element) => item.classList.remove("current-item"));
 
         (items[currentItem] as HTMLElement).scrollIntoView({
+          block: "nearest",
           behavior: "smooth",
-          inline: "center"
+          inline: "center",
+
         });
 
         items[currentItem].classList.add("current-item");
