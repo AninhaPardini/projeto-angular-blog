@@ -1,41 +1,44 @@
-<div class="book" *ngFor="let book of books">
-  <ul class="book__container">
-    <img class="book__cover" [src]="book.cover" alt="">
-    <div class="status-bar" id="status-bar" [style.width]="book.status"></div>
-    <li class="book__infos">
-      <p>{{ book.status }}</p>
-      <div class="book__stars">
-        <div [ngSwitch]="book.note" class="stars">
-          <div class="stars" *ngSwitchDefault>
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-          </div>
-          <div class="stars" *ngSwitchCase="'2'">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-          </div>
-          <div class="stars" *ngSwitchCase="'3'">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-          </div>
-          <div class="stars" *ngSwitchCase="'4'">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-          </div>
-          <div class="stars" *ngSwitchCase="'5'">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
-            <img src="../../../assets/images/book/star.svg" alt="Star">
+<div class="container">
+  <div class="book" *ngFor="let book of books">
+    <ul class="book__container">
+      <img class="book__cover" [src]="book.cover" alt="">
+      <div class="status-bar" id="status-bar" [style.width]="book.status"></div>
+      <li class="book__infos">
+        <p>{{ book.status }}</p>
+        <div class="book__stars">
+          <div [ngSwitch]="book.note" class="stars">
+            <div class="stars" *ngSwitchDefault>
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+            </div>
+            <div class="stars" *ngSwitchCase="'2'">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+            </div>
+            <div class="stars" *ngSwitchCase="'3'">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+            </div>
+            <div class="stars" *ngSwitchCase="'4'">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+            </div>
+            <div class="stars" *ngSwitchCase="'5'">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+              <img src="../../../assets/images/book/star.svg" alt="Star">
+            </div>
           </div>
         </div>
-      </div>
-    </li>
-    <li class="book__title">
-      <h3>{{ book.title }}</h3>
-    </li>
-  </ul>
+      </li>
+      <li class="book__title">
+        <h3>{{ book.title }}</h3>
+      </li>
+    </ul>
+  </div>
+
 </div>

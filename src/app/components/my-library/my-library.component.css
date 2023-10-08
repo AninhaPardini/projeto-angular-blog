@@ -1,7 +1,28 @@
 .library {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100vh;
+}
 
-  gap: 1rem;
+.library hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #cccccc17;
+  margin-bottom: 1rem;
+}
+
+.library__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  color: var(--text-color);
+ /*  background: linear-gradient(90deg, rgba(42, 32, 53, 1) 31%, rgba(67, 34, 103, 0.34637605042016806) 87%); */
+
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+
+app-book {
+  width: 100%;
+  height: 100%;
 }

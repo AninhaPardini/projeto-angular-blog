@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
 
     controls.forEach((control: Element) => {
       control.addEventListener("click", (e: Event) => {
+        e.preventDefault();
+
         let isLeft: boolean = (e.target as Element).classList.contains("arrow-left");
 
         if (isLeft) {
