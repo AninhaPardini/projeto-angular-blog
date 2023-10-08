@@ -77,7 +77,7 @@
 }
 
 .article__title a:hover {
-  color: var(--text-color-hover);
+  opacity: .8;
 }
 
 .article__text {
