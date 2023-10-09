@@ -86,7 +86,7 @@
 
 app-article-cards {
 
-  opacity: 0.6;
+  opacity: 1;
   transition: all 600ms ease-in-out;
 }
 

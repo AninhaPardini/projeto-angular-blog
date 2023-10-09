@@ -17,8 +17,6 @@ import { LightonOffComponent } from './components/lighton-off/lighton-off.compon
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { SocialComponent } from './components/social/social.component';
 
-
-
 registerLocaleData(localePt);
 
 @NgModule({
