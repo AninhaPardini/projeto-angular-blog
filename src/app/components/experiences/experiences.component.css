@@ -1,0 +1,43 @@
+.container {
+  padding: 1rem 0 0 1rem;
+}
+
+.experiences__experience {
+  margin-bottom: 1rem;
+}
+
+.experiences__experience:last-child {
+  margin-bottom: 0;
+}
+
+.experience__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 1.2rem;
+
+}
+
+.header__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--background-gradient);
+
+  padding: .5rem;
+  border-radius: 1rem;
+
+
+}
+
+.header__type {
+  font-size: .880rem;
+  font-weight: 500;
+}

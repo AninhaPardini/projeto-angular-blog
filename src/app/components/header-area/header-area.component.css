@@ -81,13 +81,11 @@
 .header h1 span {
   font-weight: 700;
   padding: .4rem;
-  background: -webkit-linear-gradient(360deg,
-    rgb(183, 13, 213) 12%,
-      rgb(110, 8, 161) 45%);
+  background: rgb(183,13,213);
+  background: linear-gradient(175deg, rgba(183,13,213,1) 0%, rgba(110,8,161,1) 40%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-  filter: brightness(1.5);
+    filter: brightness(1.5);
 
   @media (max-width: 768px) {
     font-size: 1.8rem;

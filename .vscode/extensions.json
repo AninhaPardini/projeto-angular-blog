@@ -2,7 +2,9 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
   "recommendations": [
     "angular.ng-template",
-    "formulahendry.auto-close-tag"
+    "formulahendry.auto-close-tag",
+    "rvest.vs-code-prettier-eslint",
+    "hb432.prettier-eslint-typescript"
   ]
 }
 

@@ -8,6 +8,8 @@
   --text-color-secondary: #8d749c;
   --text-color-hover: rgba(141, 9, 164, 1);
   --background-color: linear-gradient(120deg, rgba(39, 2, 45, 1) 12%, rgba(0, 0, 0, 1) 45%);
+  --background-gradient: linear-gradient(175deg, rgba(183,13,213,1) 0%, rgba(110,8,161,1) 40%);
+
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -19,6 +21,11 @@
   scroll-behavior: smooth;
   font-feature-settings: "lnum";
   --webkit-user-drag: none;
+}
+
+* p {
+  font-size: .900rem;
+  color: var(--text-color-secondary);
 }
 
 body {
