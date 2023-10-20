@@ -14,9 +14,13 @@
   height: 18rem;
 
   padding: 1.5rem;
-  border-radius: 20px;
 
-  background-color: var(--background-card);
+  background: rgba(42, 32, 53, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(42, 32, 53, 0.75);
 
   @media (max-width: 768px) {
     width: 16rem;

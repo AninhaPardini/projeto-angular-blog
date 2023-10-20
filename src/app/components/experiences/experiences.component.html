@@ -1,20 +1,76 @@
 <div class="container">
-  <div class="container__experiences">
-    <div class="experiences__experience" *ngFor="let exp of listExperiences">
-      <div class="experience__header">
-        <h2 class="header__title">{{ exp.title }}</h2>
-        <div class="header__subtitle">
-          <span class="header__type">{{ exp.subtitle }}</span>
+  <div class="container__experiences" [ngSwitch]="setor">
+    <!-- Design -->
+    <div *ngSwitchCase="'design'">
+      <div class="experiences__experience" *ngFor="let exp of listExperiencesD">
+        <div class="experience__image">
+          <a href="{{ exp.company.link }}">
+            <img src="{{ exp.image }}" alt="{{ exp.company.name }}">
+          </a>
+        </div>
+        <div class="experience__data">
+          <div class="experience__header">
+            <h2 class="header__title">{{ exp.title }}</h2>
+            <div class="header__subtitle">
+              <span class="header__type">{{ exp.subtitle }}</span>
+            </div>
+          </div>
+          <div class="experience__infos">
+            <p class="infos__date">{{ exp.date }}</p>
+          </div>
+          <div class="experience__descriptions">
+            <p>{{ exp.description }}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Development -->
+    <div *ngSwitchCase="'development'">
+      <div class="experiences__experience" *ngFor="let exp of listExperiencesDd">
+        <div class="experience__image">
+          <a href="{{ exp.company.link}}">
+            <img src="{{ exp.image }}" alt="{{ exp.company.name }}">
+          </a>
+        </div>
+        <div class="experience__data">
+          <div class="experience__header">
+            <h2 class="header__title">{{ exp.title }}</h2>
+            <div class="header__subtitle">
+              <span class="header__type">{{ exp.subtitle }}</span>
+            </div>
+          </div>
+          <div class="experience__infos">
+            <p class="infos__date">{{ exp.date }}</p>
+          </div>
+          <div class="experience__descriptions">
+            <p>{{ exp.description }}</p>
+          </div>
         </div>
       </div>
-
-      <div class="experience__infos">
-        <p class="infos__date">{{ exp.date }}</p>
+    </div>
+    <!-- Product Manager -->
+    <div *ngSwitchCase="'product-manager'">
+      <div class="experiences__experience" *ngFor="let exp of listExperiencesP">
+        <div class="experience__image">
+          <a href="{{ exp.company.link }}">
+            <img src="{{ exp.image }}" alt="{{ exp.company.name }}">
+          </a>
+        </div>
+        <div class="experience__data">
+          <div class="experience__header">
+            <h2 class="header__title">{{ exp.title }}</h2>
+            <div class="header__subtitle">
+              <span class="header__type">{{ exp.subtitle }}</span>
+            </div>
+          </div>
+          <div class="experience__infos">
+            <p class="infos__date">{{ exp.date }}</p>
+          </div>
+          <div class="experience__descriptions">
+            <p>{{ exp.description }}</p>
+          </div>
+        </div>
       </div>
-      <div class="experience__descriptions">
-        <p>{{ exp.description }}</p>
-      </div>
-
     </div>
   </div>
-</div>
