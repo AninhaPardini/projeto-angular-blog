@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 interface Experiences {
   company: {
@@ -17,9 +17,10 @@ interface Experiences {
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.css']
 })
-export class ExperiencesComponent {
+export class ExperiencesComponent implements OnInit {
   @Input()
   setor: string = '';
+
 
   public listExperiencesD: Experiences[] = [
     {company: {name: 'Warlocks', link: 'https://warlocks.tech'}, title: 'UX IU', subtitle: 'Freelancer', description: 'loren ipsun', image: 'https://media.licdn.com/dms/image/C4D0BAQGsUsiBca_fug/company-logo_200_200/0/1660851116765?e=1705536000&v=beta&t=Xk_KY-SJAwtPdb4fbuz2TCeUxzd0qIWbYOgQM0jMEmk', date: '04/04/2020'},
@@ -39,5 +40,9 @@ export class ExperiencesComponent {
   ]
 
   constructor() { }
+
+  ngOnInit(): void {
+
+  }
 }
 

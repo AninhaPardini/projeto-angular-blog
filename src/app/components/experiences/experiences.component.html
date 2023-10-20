@@ -1,7 +1,7 @@
 <div class="container">
   <div class="container__experiences" [ngSwitch]="setor">
     <!-- Design -->
-    <div *ngSwitchCase="'design'">
+    <div class="experiences__container" *ngSwitchCase="'design'">
       <div class="experiences__experience" *ngFor="let exp of listExperiencesD">
         <div class="experience__image">
           <a href="{{ exp.company.link }}">
@@ -27,7 +27,7 @@
     </div>
     <!-- Development -->
     <div *ngSwitchCase="'development'">
-      <div class="experiences__experience" *ngFor="let exp of listExperiencesDd">
+      <div class="tilt experiences__experience" *ngFor="let exp of listExperiencesDd">
         <div class="experience__image">
           <a href="{{ exp.company.link}}">
             <img src="{{ exp.image }}" alt="{{ exp.company.name }}">
@@ -51,7 +51,7 @@
     </div>
     <!-- Product Manager -->
     <div *ngSwitchCase="'product-manager'">
-      <div class="experiences__experience" *ngFor="let exp of listExperiencesP">
+      <div class="tilt experiences__experience" *ngFor="let exp of listExperiencesP">
         <div class="experience__image">
           <a href="{{ exp.company.link }}">
             <img src="{{ exp.image }}" alt="{{ exp.company.name }}">
@@ -74,3 +74,4 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="/src/vanilla-tilt.js"></script>
