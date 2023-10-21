@@ -132,7 +132,7 @@ app-nav-bar {
 
 .header__arrow {
   position: relative;
-  top: 20%;
+  top: 10%;
 
   @media (max-width: 768px) {
     top: 20%;
